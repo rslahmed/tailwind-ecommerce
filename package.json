@@ -1,0 +1,17 @@
+{
+  "name": "rafcart-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "autoprefixer": "^10.2.5",
+    "tailwindcss": "^2.1.2"
+  }
+}

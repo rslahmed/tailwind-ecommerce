@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-roboto;
+    }
+}
+
+@layer components{
+    .size-selector input:checked + label{
+        @apply bg-primary text-white;
+    }
+    .color-selector input:checked + label{
+        @apply ring-2 ring-primary;
+    }
+    .input-box{
+        @apply w-full block border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400;
+    }
+}
+
+
